@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1aFvBp | tr '\n' ',' | sed 's/,$/\n/' | tr '*' '\0' | sed 's/,/, /g' | awk '{if (substr($0,1,1) == ".") {print substr($0,2)} else {print $0}}'
+ls -1aFvB | tr '\n' ',' | sed 's/,$/\n/' | sed 's/,/, /g'
