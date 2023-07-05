@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | sed -e 's/^/.\//' | sed -e '1s/^/..\//' | tr '\n' ',' | sed 's/,$/\n/' | sed 's/,$//'
+ls -1aFv | tr '\n' ',' | sed 's/,$/\n/'
