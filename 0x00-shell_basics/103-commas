@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laFvB | tr '\n' ',' | sed 's/,$/\n/' | tr '*' '\0'
+ls -1aFvB | tr '\n' ',' | sed 's/,$/\n/'| tr '*' '\0' |sed 's/,/, /g'
